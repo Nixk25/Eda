@@ -13,13 +13,13 @@ const Concerts = () => {
     <section className=" mt-[100px] flex justify-center items-center">
       <div className="container">
         <h2 className="pageText">Nadcházející koncerty </h2>
-        <div className="flex flex-col gap-3 ">
+        <div className="flex flex-col gap-10 sm:gap-5 ">
           {concerts.map((concert, i) => {
             return <Concert key={i} name={concert.name} date={concert.date} />;
           })}
         </div>
         <h2 className="pageText mt-10">Minulé</h2>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-10 sm:gap-5">
           {prevConc.map((concert, i) => {
             return <PrevConc key={i} name={concert.name} date={concert.date} />;
           })}

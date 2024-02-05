@@ -10,9 +10,9 @@ const PrevConc = ({ name, date }) => {
   };
   return (
     <div>
-      <div className="flex flex-row justify-between items-center w-full">
-        <h3>{name}</h3>
-        <div>{formatDate(date)}</div>
+      <div className="flex flex-col text-center sm:flex-row justify-between items-center w-full">
+        <h3 className="mb-3">{name}</h3>
+        <div className="font-bold">{formatDate(date)}</div>
       </div>
     </div>
   );

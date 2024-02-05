@@ -9,7 +9,7 @@ const Disco = () => {
     <section className="my-20">
       <div className="container">
         <h2 className="title text-center">Nejnovější Diskografie</h2>
-        <div className="flex gap-5 w-full">
+        <div className="flex gap-5 w-full sm:flex-row flex-col">
           <Link
             href="https://youtu.be/FCpB-ltsDYE?si=G6VJk2MQHNlBHvHl"
             target="_blank"

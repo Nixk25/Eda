@@ -101,9 +101,11 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button className="w-full" type="submit">
-          {loading}
-        </Button>
+        <div className="w-full flex justify-center items-center">
+          <Button className="w-full lg:w-max " type="submit">
+            {loading}
+          </Button>
+        </div>
       </form>
     </Form>
   );

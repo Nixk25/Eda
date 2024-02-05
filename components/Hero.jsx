@@ -4,13 +4,13 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="min-h-[100dvh] flex justify-center items-center flex-col text-center relative">
+    <section className="min-h-[100dvh] mt-10 flex justify-center items-center flex-col text-center relative">
       <div className="flex flex-col gap-10 container ">
         <h1 className="clamp">Taková normální rodinka band</h1>
         <p>
           Vítejte na našem hudebním domově, kde hudba není jen zvukem, ale
-          rodinným spojením! Jsme "Taková Normální Rodinka Band," skupina, která
-          vás zve na nezapomenutelnou cestu za zvukem a příběhem.
+          rodinným spojením! &#34;Jsme Taková Normální Rodinka Band,&#34;
+          skupina, která vás zve na nezapomenutelnou cestu za zvukem a příběhem.
         </p>
         <div className=" flex gap-5 justify-center items-center">
           <Button asChild>

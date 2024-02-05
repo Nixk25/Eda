@@ -1,11 +1,8 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import Countdown from "./Countdown";
-import concerts from "@/data/concerts";
 
 const Hero = () => {
-  const closestConcert = concerts[0];
   return (
     <section className="min-h-[100dvh] flex justify-center items-center flex-col text-center relative">
       <div className="flex flex-col gap-10 container ">
@@ -24,8 +21,6 @@ const Hero = () => {
             <Link href="#about">O nás</Link>
           </Button>
         </div>
-        <h1 className="text-lg">Následující koncert:</h1>
-        <Countdown date={closestConcert.date} />
       </div>
     </section>
   );

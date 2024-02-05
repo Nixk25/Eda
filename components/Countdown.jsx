@@ -10,7 +10,9 @@ const Countdown = () => {
 
   const [currentConcertIndex, setCurrentConcertIndex] = useState(0);
   const currentConcert = concertsData[currentConcertIndex];
-  const endDate = new Date(currentConcert.date).getTime();
+  const timezoneOffset = new Date().getTimezoneOffset() * 60000; // získání aktuálního offsetu
+  const endDate =
+    new Date(currentConcert.date).getTime() + timezoneOffset - 60000;
 
   const [timeRemaining, setTimeRemaining] = useState(
     calculateTimeRemaining(endDate)
@@ -23,12 +25,12 @@ const Countdown = () => {
       if (remaining > 0) {
         setTimeRemaining(remaining);
       } else {
-        // Koncert skončil, přepněte na další koncert
+        // Koncert skončil a na další koncert
         setCurrentConcertIndex(
           (prevIndex) => (prevIndex + 1) % concertsData.length
         );
 
-        // Resetujte odpočet pro další koncert
+        // Reset odpočet pro další koncert
         const newEndDate = new Date(
           concertsData[currentConcertIndex + 1].date
         ).getTime();
@@ -47,7 +49,7 @@ const Countdown = () => {
           <div className="time font-extrabold">
             {Math.floor(timeRemaining / (1000 * 60 * 60 * 24))}{" "}
           </div>
-          <span>Dní</span>
+          <span className="text-sm">Dní</span>
         </div>
 
         <div className="flex flex-col gap-3">
@@ -56,19 +58,19 @@ const Countdown = () => {
               (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
             )}{" "}
           </div>
-          <span>Hodin</span>
+          <span className="text-sm">Hodin</span>
         </div>
         <div className="flex flex-col gap-3">
           <div className="time font-extrabold">
             {Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60))}
           </div>
-          <span>Minut</span>
+          <span className="text-sm">Minut</span>
         </div>
         <div className="flex flex-col gap-3">
           <div className="time font-extrabold">
             {Math.floor((timeRemaining % (1000 * 60)) / 1000)}
           </div>
-          <span>Sekund</span>
+          <span className="text-sm">Sekund</span>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ export const metadata = {
 
 const Concerts = () => {
   return (
-    <section className=" mt-[100px] flex justify-center items-center">
+    <section className=" mt-[200px] flex justify-center items-center">
       <div className="container">
         <h2 className="pageText">Nadcházející koncerty </h2>
         <div className="flex flex-col gap-10 sm:gap-5 ">

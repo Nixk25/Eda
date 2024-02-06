@@ -9,7 +9,7 @@ export const metadata = {
 
 const Disco = () => {
   return (
-    <section className=" mt-[100px] flex justify-center items-center">
+    <section className=" mt-[200px] flex justify-center items-center">
       <div className="container">
         <h2 className="pageText">Celá diskografie</h2>
         <ul className="list-none mt-7">

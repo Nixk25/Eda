@@ -6,13 +6,13 @@ import { links } from "@/data/links";
 import Menu from "./Menu";
 const Navbar = () => {
   return (
-    <nav className=" flex items-center justify-between px-5 bg-black/30 fixed top-0 left-0 w-full z-10 backdrop-blur-sm text-white ">
+    <nav className=" flex items-center justify-between px-5 bg-black/80 fixed top-0 left-0 w-full z-10 backdrop-blur-sm text-white ">
       <div>
         <Link href="/">
           <Image
             src={logo}
-            width={100}
-            height={100}
+            width={200}
+            height={200}
             alt="logo skupiny Taková normální rodinka band"
           />
         </Link>

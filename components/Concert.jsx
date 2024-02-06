@@ -13,8 +13,8 @@ const Concert = ({ name, date }) => {
   };
   return (
     <div className="flex flex-col text-center sm:flex-row justify-between items-center w-full ">
-      <h3 className="mb-3">{name}</h3>
-      <div className="font-bold ">{formatDate(date)}</div>
+      <h3 className="mb-3 order-2 sm:order-1 ">{name}</h3>
+      <div className="font-bold order-1 sm:order-2 ">{formatDate(date)}</div>
     </div>
   );
 };

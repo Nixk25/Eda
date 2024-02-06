@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Goblin+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik+Mono+One&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,11 +22,12 @@ a {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   text-align: center;
   text-transform: uppercase;
-  font-family: "Goblin One", serif;
+  font-family: "Rubik Mono One", sans-serif;
   line-height: 1.125;
   font-weight: 600;
   letter-spacing: 0.004em;
   margin-bottom: 30px;
+  word-spacing: -10px;
 }
 
 @media (min-width: 640px) {
@@ -38,14 +39,16 @@ a {
 .clamp {
   font-size: clamp(2rem, 10vw, 4rem);
   text-transform: uppercase;
-  font-family: "Goblin One", serif;
+  font-family: "Rubik Mono One", sans-serif;
   line-height: 1.125;
   font-weight: 600;
   letter-spacing: 0.004em;
+  word-spacing: -25px;
 }
 
 .navText {
-  font-family: "Goblin One", serif;
+  font-family: "Rubik Mono One", sans-serif;
+  word-spacing: -8px;
 }
 
 .time {
@@ -53,10 +56,11 @@ a {
 }
 
 .title {
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-family: "Oswald", sans-serif;
+  font-size: clamp(0.5rem, 5vw, 2rem);
+  font-family: "Rubik Mono One", sans-serif;
   font-weight: bold;
   margin-bottom: 2rem;
+  word-spacing: -10px;
 }
 
 .div1 {

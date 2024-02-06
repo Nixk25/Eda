@@ -15,6 +15,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
 import { useState } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const formSchema = z.object({
   name: z
@@ -31,6 +33,7 @@ const formSchema = z.object({
 
 export default function ContactForm() {
   const [loading, setLoading] = useState("Odeslat");
+  const formEmail = useRef();
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -41,8 +44,13 @@ export default function ContactForm() {
     },
   });
 
-  function onSubmit(values) {
-    console.log(values);
+  function onSubmit() {
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      formEmail.current,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY
+    );
     form.reset();
     setLoading("Odesílání..");
 
@@ -58,7 +66,11 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form
+        ref={formEmail}
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-8"
+      >
         <div className="flex justify-between items-center md:flex-row flex-col w-full gap-8 mt-5">
           <div className="w-full md:w-1/2">
             <FormField

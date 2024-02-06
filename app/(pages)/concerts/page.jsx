@@ -18,7 +18,7 @@ const Concerts = () => {
             return <Concert key={i} name={concert.name} date={concert.date} />;
           })}
         </div>
-        <h2 className="pageText mt-10">Minulé</h2>
+        <h2 className="pageText mt-10">Proběhlé</h2>
         <div className="flex flex-col gap-10 sm:gap-5">
           {prevConc.map((concert, i) => {
             return <PrevConc key={i} name={concert.name} date={concert.date} />;

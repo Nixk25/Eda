@@ -21,11 +21,7 @@ const Disco = () => {
                 className="rounded-md my-5"
                 placeholder="blur"
               />
-              <h3 className="text-xl font-semibold mb-3">Nejde to vejš</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae quia magni
-              </p>
+              <h3 className="text-xl font-semibold mb-3  ">Nejde to vejš</h3>
             </div>
           </Link>
           <Link
@@ -38,8 +34,7 @@ const Disco = () => {
                 alt="music nejde to vejš from music group Taková normální rodinka"
                 className="rounded-md my-5"
               />
-              <h3 className="text-xl font-semibold mb-3">Špagáta</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h3 className="text-xl font-semibold mb-3 ">Špagáta</h3>
             </div>
           </Link>
         </div>

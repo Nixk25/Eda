@@ -7,4 +7,8 @@ export const links = [
       href: "/concerts",
       text: "Koncerty",
     },
+    {
+      href:"/promo",
+      text:"Pro pořadatele"
+    },
   ];

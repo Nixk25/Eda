@@ -6,12 +6,18 @@
 :root {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  --main-color: #ff930f;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  color: #fff;
 }
 
 a {
@@ -44,6 +50,18 @@ a {
   font-weight: 600;
   letter-spacing: 0.004em;
   word-spacing: -25px;
+  color: #fff;
+}
+
+.main {
+  font-size: clamp(2rem, 10vw, 4rem);
+  text-transform: uppercase;
+  font-family: "Rubik Mono One", sans-serif;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  word-spacing: -25px;
+  color: var(--main-color);
 }
 
 .navText {

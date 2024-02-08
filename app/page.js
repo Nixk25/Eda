@@ -11,9 +11,9 @@ export default function Home() {
       <Hero/>
       <NextConcert/>
       <About/>
-      <Grid/>
       <Disco/>
       <Family />
+      <Grid/>
       <Contact/>
     </>
   );

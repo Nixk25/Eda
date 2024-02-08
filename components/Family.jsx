@@ -25,7 +25,7 @@ const Family = () => {
             {family.map((member, i) => {
               return (
                 <CarouselItem key={i} className="md:basis-1/3">
-                  <Card className=" shadow-md">
+                  <Card className=" shadow-xl">
                     <CardContent className="p-0 text-center flex flex-col gap-3">
                       <Image
                         src={member.photo}

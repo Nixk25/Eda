@@ -21,7 +21,7 @@ const Disco = () => {
                 className="rounded-md my-5"
                 placeholder="blur"
               />
-              <h3 className="text-xl font-semibold mb-3  ">Nejde to vejš</h3>
+              <h3 className="text-xl font-semibold mb-3  ">Áda</h3>
             </div>
           </Link>
           <Link

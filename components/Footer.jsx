@@ -9,7 +9,7 @@ import { socials } from "@/data/socials";
 
 const Footer = () => {
   return (
-    <section className="mt-10 pt-10 pb-2 bg-black flex justify-center items-center flex-col gap-5">
+    <section className="mt-10 pt-10 pb-2  flex justify-center items-center flex-col gap-5">
       <div className="flex justify-center items-center gap-5">
         {socials.map(({ follow, link, icon }, i) => {
           return (
@@ -26,7 +26,19 @@ const Footer = () => {
           );
         })}
       </div>
-      <p className="text-white">©2024 TNRB. Všechna práva vyhrazena</p>
+      <p className="text-white text-center">
+        ©2024 TNRB. Všechna práva vyhrazena
+      </p>
+      <span>
+        Vytvořil{" "}
+        <a
+          className="text-primary"
+          target="_blank"
+          href="https://www.nicolasmelda.com"
+        >
+          Nick
+        </a>
+      </span>
     </section>
   );
 };

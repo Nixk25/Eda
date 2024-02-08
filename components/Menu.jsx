@@ -18,8 +18,8 @@ const Menu = () => {
       <div
         className={
           isOpen
-            ? " fixed top-0 left-0  text-center  h-dvh w-screen ease-in-out duration-300 z-50 bg-black"
-            : " fixed top-0 left-[-100%] h-dvh w-screen z-50 bg-black transition-all ease-in-out duration-300"
+            ? " fixed top-0 right-0  text-center  h-dvh w-screen ease-in-out duration-300 z-50 bg-[#212121]"
+            : " fixed top-0 right-[-100%] text-center h-dvh w-screen z-50 bg-[#212121] transition-all ease-in-out duration-300"
         }
       >
         <Image

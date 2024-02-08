@@ -17,7 +17,7 @@ const Disco = () => {
             <li key={i}>
               <article
                 className={`flex justify-between p-2 rounded-md  ${
-                  i % 2 === 0 ? "bg-slate-100" : "bg-white"
+                  i % 2 === 0 ? "bg-slate-50 text-black" : "bg-trasparent"
                 }`}
               >
                 <span>{title}</span>

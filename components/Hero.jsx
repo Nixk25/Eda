@@ -17,7 +17,7 @@ const Hero = () => {
             <Link href="#contact">Kontaktujte nás</Link>
           </Button>
 
-          <Button variant="outline" asChild>
+          <Button variant="secondary" asChild>
             <Link href="#about">O nás</Link>
           </Button>
         </div>

@@ -24,7 +24,7 @@ export const socials = [
     },
     {
       follow: "BandZone",
-      link: "https://bandzone.cz/takovanormalnirodinkaband",
+      link: "https://bandzone.cz/_120921?at=dashboard",
       icon: <FaBandcamp color="white" size={25} />,
     },
   ];

@@ -45,14 +45,14 @@ const Countdown = () => {
     <div className="flex justify-center items-center flex-col gap-3">
       <h2 className="text-2xl">{currentConcert.name}</h2>
       <div className="flex gap-5">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 title">
           <div className="time font-extrabold">
             {Math.floor(timeRemaining / (1000 * 60 * 60 * 24))}{" "}
           </div>
           <span className="text-sm">Dní</span>
         </div>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 title">
           <div className="time font-extrabold">
             {Math.floor(
               (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -60,13 +60,13 @@ const Countdown = () => {
           </div>
           <span className="text-sm">Hodin</span>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 title">
           <div className="time font-extrabold">
             {Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60))}
           </div>
           <span className="text-sm">Minut</span>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 title">
           <div className="time font-extrabold">
             {Math.floor((timeRemaining % (1000 * 60)) / 1000)}
           </div>

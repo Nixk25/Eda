@@ -20,6 +20,9 @@ module.exports = {
       backgroundImage:{
         "hero":"url('../public/hero.jpeg')"
       },
+      colors:{
+        primary:"#ff930f",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

@@ -6,7 +6,7 @@ import profileSara from "../public/profile-sara.jpg";
 export const family = [
     {
       name: "Jaromír Štolba",
-      role: "Frontman",
+      role: "Zpěv",
       fcb: "https://www.facebook.com/profile.php?id=100009354733533",
       ig: "",
       photo: profileJar,
@@ -14,7 +14,7 @@ export const family = [
     },
     {
       name: "Eduard Příhoda",
-      role: "Kytarista",
+      role: "Kytara",
       fcb: "https://www.facebook.com/eduard.prihoda.7",
       ig: "https://www.instagram.com/eduardprihoda/",
       photo: profileEdast,
@@ -22,7 +22,7 @@ export const family = [
     },
     {
       name: "Eduard Přihoda",
-      role: "Baskytarista",
+      role: "Baskytara",
       fcb: "https://www.facebook.com/edik.prihoda",
       ig: "https://www.instagram.com/lil_edie_420/",
       photo: profileEda,
@@ -30,7 +30,7 @@ export const family = [
     },
     {
       name: "Sára Štolbová",
-      role: "Saxofonistka a zpěvačka",
+      role: "Saxofon a zpěv",
       fcb: "https://www.facebook.com/sarinkiss",
       ig: "https://www.instagram.com/sarusee.s/",
       photo: profileSara,

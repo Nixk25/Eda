@@ -13,14 +13,14 @@ const Contact = () => {
             <div className="flex gap-10 sm:flex-row flex-col text-center">
               <div className="flex flex-col">
                 <span>Umělecká vedoucí</span>
-                <span>Lucie Baierová</span>
+                <span>Jana Vannay</span>
                 <div className="flex gap-3">
                   <a href="tel:+420 732 513 490">tel: +420 732 513 490</a>
                 </div>
               </div>
               <div className="flex flex-col">
                 <span>Umělecká vedoucí</span>
-                <span>Jana Vannay</span>
+                <span>Lucie Baierová</span>
                 <div className="flex gap-3">
                   <a href="tel:+420 732 513 490">tel: +420 732 513 490</a>
                 </div>

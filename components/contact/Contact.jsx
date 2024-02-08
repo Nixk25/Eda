@@ -15,7 +15,7 @@ const Contact = () => {
                 <span>Umělecká vedoucí</span>
                 <span>Jana Vannay</span>
                 <div className="flex gap-3">
-                  <a href="tel:+420 732 513 490">tel: +420 732 513 490</a>
+                  <a href="tel:+420 732 513 490">tel: +420 731 180 609</a>
                 </div>
               </div>
               <div className="flex flex-col">

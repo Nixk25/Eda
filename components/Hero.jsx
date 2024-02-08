@@ -9,8 +9,8 @@ const Hero = () => {
         <h1 className="clamp">Taková normální rodinka band</h1>
         <p>
           Vítejte na našem hudebním domově, kde hudba není jen zvukem, ale
-          rodinným spojením!"Jsme Taková Normální Rodinka Band" , skupina, která
-          vás zve na nezapomenutelnou cestu za zvukem a příběhem.
+          rodinným spojením!&quot;Jsme Taková Normální Rodinka Band&quot; ,
+          skupina, která vás zve na nezapomenutelnou cestu za zvukem a příběhem.
         </p>
         <div className=" flex gap-5 justify-center items-center">
           <Button asChild>

@@ -30,7 +30,7 @@ const Family = () => {
                       <Image
                         src={member.photo}
                         placeholder="blur"
-                        className=" rounded-t-md max-h-[240px] object-cover "
+                        className=" rounded-t-md max-h-[210px] object-cover "
                         alt={member.alt}
                       />
                       <h3>{member.name}</h3>

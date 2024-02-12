@@ -7,11 +7,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import photo1 from "../public/photo1.png";
-import photo2 from "../public/photo2.png";
-import photo3 from "../public/photo3.png";
-import photo4 from "../public/photo4.png";
-import photo5 from "../public/photo5.png";
+import photo1 from "../public/photo1.jpg";
+import photo2 from "../public/photo2.jpg";
+import photo3 from "../public/photo3.jpg";
+import photo4 from "../public/photo4.jpg";
+import photo5 from "../public/photo5.jpg";
 
 const About = () => {
   return (
@@ -40,7 +40,7 @@ const About = () => {
           orientation="vertical"
           opts={{ align: "start" }}
         >
-          <CarouselContent className="-mt-1 h-[270px]">
+          <CarouselContent className="-mt-1 h-[370px]">
             <CarouselItem className="p-1">
               <Image
                 src={photo1}

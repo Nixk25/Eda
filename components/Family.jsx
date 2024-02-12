@@ -20,7 +20,7 @@ const Family = () => {
     <section className="my-10">
       <div className="container flex justify-center items-center flex-col">
         <h2 className="title text-center">Naše rodinka</h2>
-        <Carousel className="max-w-[90%]">
+        <Carousel className="max-w-[85%]">
           <CarouselContent>
             {family.map((member, i) => {
               return (
@@ -30,18 +30,18 @@ const Family = () => {
                       <Image
                         src={member.photo}
                         placeholder="blur"
-                        className=" rounded-t-md"
+                        className=" rounded-t-md max-h-[240px] object-cover "
                         alt={member.alt}
                       />
                       <h3>{member.name}</h3>
                       <p>{member.role}</p>
                       <div className="flex justify-center items-center gap-5 mb-3">
-                        <Link href={member.fcb}>
+                        <Link href={member.fcb} target="_blank">
                           <span className="text-xl">
                             <FaFacebook />
                           </span>
                         </Link>
-                        <Link href={member.ig}>
+                        <Link href={member.ig} target="_blank">
                           <span className="text-2xl">
                             <AiFillInstagram />
                           </span>

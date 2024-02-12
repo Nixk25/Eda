@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="flex justify-center items-center gap-5">
         {socials.map(({ follow, link, icon }, i) => {
           return (
-            <Link key={i} href={link}>
+            <Link key={i} href={link} target="_blank">
               <HoverCard>
                 <HoverCardTrigger asChild className="cursor-pointer">
                   {icon}
@@ -31,13 +31,13 @@ const Footer = () => {
       </p>
       <span>
         Vytvořil{" "}
-        <a
+        <Link
           className="text-primary"
           target="_blank"
           href="https://www.nicolasmelda.com"
         >
           Nick
-        </a>
+        </Link>
       </span>
     </section>
   );

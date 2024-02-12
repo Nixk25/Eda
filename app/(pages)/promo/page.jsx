@@ -10,21 +10,31 @@ const Promo = () => {
         <div>
           <h2 className="title text-center mt-10">Stage Plán</h2>
           <div className="w-full flex-wrap flex gap-5 justify-center items-center sm:flex-row flex-col">
-            <Image src={stage} layout="responsive" />
+            <Image
+              src={stage}
+              alt="stage plán pro kapelu taková normální rodinka band"
+            />
           </div>
         </div>
         <div>
-          <h2 className="title text-center">Promo fotky zde</h2>
+          <h2 className="title text-center my-[100px]">Promo fotky zde</h2>
           <div className="w-full flex-wrap flex gap-5 justify-center items-center sm:flex-row flex-col">
             {images.map(({ src, alt }, i) => (
               <Image key={i} width={300} height={300} src={src} alt={alt} />
             ))}
           </div>
           <div>
-            <h2 className="title text-center mt-10">Loga na promo</h2>
+            <h2 className="title text-center my-[100px]">Loga na promo</h2>
             <div className="w-full flex-wrap flex gap-5 justify-center items-center sm:flex-row flex-col">
               {logos.map(({ src, alt }, i) => (
-                <Image key={i} width={300} height={300} src={src} alt={alt} />
+                <Image
+                  key={i}
+                  width={300}
+                  height={300}
+                  src={src}
+                  alt={alt}
+                  placeholder="blur"
+                />
               ))}
             </div>
           </div>

@@ -27,6 +27,12 @@ const Family = () => {
                 <CarouselItem key={i} className="md:basis-1/3">
                   <Card className=" shadow-xl">
                     <CardContent className="p-0 text-center flex flex-col gap-3">
+                      <Image
+                        src={member.photo}
+                        placeholder="blur"
+                        className=" rounded-t-md max-h-[210px] object-cover "
+                        alt={member.alt}
+                      />
                       <h3>{member.name}</h3>
                       <p>{member.role}</p>
                       <div className="flex justify-center items-center gap-5 mb-3">

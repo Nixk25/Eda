@@ -3,7 +3,7 @@ import photo2 from "../public/photo2.jpg"
 import photo3 from "../public/photo3.jpg"
 import photo4 from "../public/photo4.jpg"
 import photo5 from "../public/photo5.jpg"
-
+import photo6 from "../public/photo6.jpg"
 
 const images = [
     {
@@ -24,6 +24,10 @@ const images = [
     },
     {
         src:photo5,
+        alt:"fotka taková normální rodinka band",
+    },
+    {
+        src:photo6,
         alt:"fotka taková normální rodinka band",
     },
 ]

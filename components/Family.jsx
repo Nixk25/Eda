@@ -29,7 +29,6 @@ const Family = () => {
                     <CardContent className="p-0 text-center flex flex-col gap-3">
                       <Image
                         src={member.photo}
-                        placeholder="blur"
                         className=" rounded-t-md max-h-[210px] object-cover "
                         alt={member.alt}
                       />

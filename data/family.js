@@ -1,9 +1,9 @@
-import profileEda from "../public/profile-eda.jpg";
-import profileJar from "../public/profile-jar.jpg";
-import profileEdast from "../public/profile-edast.jpg";
-import profileSara from "../public/profile-sara.jpg";
-import profileSof from "../public/profile-sof.jpg";
-import profileOndra from "../public/profile-ondra.jpg";
+import profileEda from "../public/profile-eda.png";
+import profileJar from "../public/profile-jar.png";
+import profileEdast from "../public/profile-edast.png";
+import profileSara from "../public/profile-sara.png";
+import profileSof from "../public/profile-sof.png";
+import profileOndra from "../public/profile-ondra.png";
 
 export const family = [
     {

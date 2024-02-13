@@ -18,7 +18,11 @@ const Promo = () => {
         </div>
         <div>
           <h2 className="title text-center my-[100px]">Promo fotky zde</h2>
-
+          <div className="w-full flex-wrap flex gap-5 justify-center items-center sm:flex-row flex-col">
+            {images.map(({ src, alt }, i) => (
+              <Image key={i} width={300} height={300} src={src} alt={alt} />
+            ))}
+          </div>
           <div>
             <h2 className="title text-center my-[100px]">Loga na promo</h2>
             <div className="w-full flex-wrap flex gap-5 justify-center items-center sm:flex-row flex-col">

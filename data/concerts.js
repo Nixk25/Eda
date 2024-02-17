@@ -6,6 +6,7 @@ const concerts = [
   { date: '2024-07-13T20:00:00+02:00', name: 'Zálší u Vysokého Mýta Kocanda Fest' },
   { date: '2024-07-27T20:00:00+02:00', name: 'Staré Město pod Sněžníkem, náměstí Anenská pouť' },
   { date: '2024-08-03T20:00:00+02:00', name: 'Vraclav u Vysokého Mýta Vršovák Festival' },
+  { date: '2024-08-06T20:00:00+02:00', name: 'Hrachov u Sedlčan' },
   { date: '2024-08-17T20:00:00+02:00', name: 'Česká Třebová restaurace Na Horách' },
   { date: '2024-08-30T20:00:00+02:00', name: 'Seč- Ústupky SEČ SE LOUČÍ S LÉTEM – akustický set' },
   { date: '2025-01-25T20:00:00+01:00', name: 'Vysoké Mýto M klub Buzerant + Taková normální rodinka band ' },

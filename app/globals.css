@@ -19,6 +19,13 @@ body {
   background-color: #212121;
   color: #fff;
 }
+.clamp {
+  font-size: clamp(3rem, 10vw, 4rem);
+}
+
+.sm-clamp {
+  font-size: clamp(1.2rem, 5vw, 2.5rem);
+}
 
 a {
   text-decoration: none;

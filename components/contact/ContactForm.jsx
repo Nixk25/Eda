@@ -46,10 +46,10 @@ export default function ContactForm() {
 
   function onSubmit() {
     emailjs.sendForm(
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      process.env.NEXT_SERVICE_ID,
+      process.env.NEXT_TEMPLATE_ID,
       formEmail.current,
-      process.env.NEXT_PUBLIC_PUBLIC_KEY
+      process.env.NEXT_KEY
     );
     form.reset();
     setLoading("Odesílání..");
@@ -71,7 +71,7 @@ export default function ContactForm() {
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-8"
       >
-        <div className="flex justify-between items-center md:flex-row flex-col w-full gap-8 mt-5">
+        <div className="flex flex-col items-center justify-between w-full gap-8 mt-5 md:flex-row">
           <div className="w-full md:w-1/2">
             <FormField
               control={form.control}
@@ -113,7 +113,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <div className="w-full flex justify-center items-center">
+        <div className="flex items-center justify-center w-full">
           <Button className="w-full lg:w-max " type="submit">
             {loading}
           </Button>

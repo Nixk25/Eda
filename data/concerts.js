@@ -34,7 +34,7 @@ const concerts = [
     name: "Česká Třebová restaurace Na Horách",
   },
   {
-    date: "2024-08-30T20:00:00+02:00",
+    date: "2024-08-23T20:00:00+02:00",
     name: "Seč- Ústupky SEČ SE LOUČÍ S LÉTEM – akustický set",
   },
   {

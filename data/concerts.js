@@ -1,9 +1,5 @@
 const concerts = [
   {
-    date: "2024-03-09T20:00:00+01:00",
-    name: "Vysoké Mýto, Mklub Odborářský ples Iveco",
-  },
-  {
     date: "2024-03-16T20:00:00+01:00",
     name: "Pardubice, Restaurace Rosignano Koncert společně s V.V.Ú & V.P.R.",
   },
@@ -32,6 +28,10 @@ const concerts = [
   {
     date: "2024-08-17T20:00:00+02:00",
     name: "Česká Třebová restaurace Na Horách",
+  },
+  {
+    date: "2024-08-18T12:30:00+02:00",
+    name: "Volary –náměstí..Volarské slavnosti dřeva",
   },
   {
     date: "2024-08-23T20:00:00+02:00",

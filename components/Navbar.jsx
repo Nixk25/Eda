@@ -30,7 +30,7 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="hidden gap-3 uppercase sm:flex">
+          <div className="items-center hidden gap-3 uppercase sm:flex">
             {links.map(({ href, text }, i) => (
               <Link
                 key={i}
@@ -40,13 +40,13 @@ const Navbar = () => {
                 {text}
               </Link>
             ))}
+            <div className="hidden sm:flex">
+              {status === "authenticated" ? (
+                <Button onClick={signOut}>Odhlásit se</Button>
+              ) : null}
+            </div>
           </div>
           <Menu />
-          <div className="hidden sm:flex">
-            {status === "authenticated" && (
-              <Button onClick={signOut}>Odhlásit se</Button>
-            )}
-          </div>
         </nav>
       )}
     </>

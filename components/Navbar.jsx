@@ -42,9 +42,11 @@ const Navbar = () => {
             ))}
           </div>
           <Menu />
-          {status === "authenticated" && (
-            <Button onClick={signOut}>Odhlásit se</Button>
-          )}
+          <div className="hidden sm:flex">
+            {status === "authenticated" && (
+              <Button onClick={signOut}>Odhlásit se</Button>
+            )}
+          </div>
         </nav>
       )}
     </>

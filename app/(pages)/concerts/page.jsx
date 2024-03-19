@@ -65,11 +65,13 @@ const Concerts = () => {
     <section className=" mt-[200px] flex justify-center items-center">
       <div className="container">
         <h2 className="pageText">Nadcházející koncerty </h2>
-        {status === "authenticated" && (
-          <Link href="/addNewConcert">
-            <Button className="mb-10">Přidat koncert</Button>
-          </Link>
-        )}
+        <div className="flex items-center justify-center sm:justify-start">
+          {status === "authenticated" && (
+            <Link href="/addNewConcert">
+              <Button className="mb-10">Přidat koncert</Button>
+            </Link>
+          )}
+        </div>
         <div className="flex flex-col gap-10 sm:gap-5 ">
           {concerts.map((concert, i) => {
             return (

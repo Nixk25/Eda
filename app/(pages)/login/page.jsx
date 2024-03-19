@@ -54,7 +54,7 @@ const Login = () => {
   });
 
   return (
-    <section className="flex flex-col items-center justify-center w-screen h-dvh ">
+    <section className="flex flex-col items-center justify-center w-full h-dvh ">
       <main className="relative flex flex-col gap-3 px-10 py-8 text-center rounded-lg ">
         <h2 className="mb-5 font-bold sm-clamp ">Přihlaste se</h2>
         <Form {...form}>

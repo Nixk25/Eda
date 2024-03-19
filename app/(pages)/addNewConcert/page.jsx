@@ -32,7 +32,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { cs } from "date-fns/locale";
-const addNewConcert = () => {
+const AddNewConcert = () => {
   const router = useRouter();
   const [date, setDate] = useState();
 
@@ -201,4 +201,4 @@ const addNewConcert = () => {
   );
 };
 
-export default addNewConcert;
+export default AddNewConcert;

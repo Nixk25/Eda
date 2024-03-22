@@ -74,6 +74,7 @@ a {
 .navText {
   font-family: "Rubik Mono One", sans-serif;
   word-spacing: -8px;
+  font-size: clamp(1.2rem, 5vw, 2.5rem);
 }
 
 .time {

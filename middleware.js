@@ -4,5 +4,6 @@ export default withAuth({
   pages: {
     signIn: "/login",
   },
-  matcher: ["/addNewConcert"],
 });
+
+export const config = { matcher: ["/addNewConcert"] };

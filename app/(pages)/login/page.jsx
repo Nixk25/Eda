@@ -33,7 +33,7 @@ const Login = () => {
         return;
       } else {
         form.reset();
-        router.replace("/");
+        router.replace("/addNewConcert");
       }
     } catch (err) {
       console.log("error:", err);

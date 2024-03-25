@@ -18,23 +18,24 @@ import { family } from "@/data/family";
 const Family = () => {
   return (
     <section className="my-10">
-      <div className="container flex justify-center items-center flex-col">
-        <h2 className="title text-center">Naše rodinka</h2>
+      <div className="container flex flex-col items-center justify-center">
+        <h2 className="text-center title">Naše rodinka</h2>
         <Carousel className="max-w-[85%]">
           <CarouselContent>
             {family.map((member, i) => {
               return (
                 <CarouselItem key={i} className="md:basis-1/3">
-                  <Card className=" shadow-xl">
-                    <CardContent className="p-0 text-center flex flex-col gap-3">
+                  <Card className="shadow-xl ">
+                    <CardContent className="flex flex-col gap-3 p-0 text-center">
                       <Image
                         src={member.photo}
                         className=" rounded-t-md max-h-[210px] object-cover "
                         alt={member.alt}
+                        placeholder="blur"
                       />
                       <h3>{member.name}</h3>
                       <p>{member.role}</p>
-                      <div className="flex justify-center items-center gap-5 mb-3">
+                      <div className="flex items-center justify-center gap-5 mb-3">
                         <Link href={member.fcb} target="_blank">
                           <span className="text-xl">
                             <FaFacebook />

@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>Tnr-Band 🎵</h1>
 
-## Getting Started
+<h2>Intro</h2>
+Tnr-Band is a web project designed for an up-and-coming music band. As mine first commercial project, it marks a significant milestone. The platform incorporates features like concert management, an admin panel, and an automatic countdown system. Let’s dive into the details!
 
-First, run the development server:
+<h2>Tech Stack 🛠️</h2>
+The project utilizes basic frontend technologies:
+<ul>
+<li>Next.js: For building the frontend and server-side rendering.</li>
+<li>Tailwind CSS: Used for styling and layout.</li>
+<li>MongoDB: The database for storing concert information.</li>
+<li>NextAuth.js with JWT Strategy: Implemented for user authentication.</li>
+</ul>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<h2>Features 🌟</h2>
+Tnr-Band boasts the following features:
+<ul>
+<li>Concert Management: The admin can add, update, and remove concerts. Each concert has a countdown timer.</li>
+<li>Automatic Countdown: The homepage displays the countdown to the nearest upcoming concert. When the countdown reaches zero, the system automatically switches to the past concerts section and starts counting down to the next event.</li>
+<li>Admin Authentication: The admin must log in to access the concert management features.</li>
+</ul>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2>Process 🚀</h2>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The project began with the goal of creating a dynamic platform for music band. I designed wireframes and then proceeded to implement the frontend using Next.js and Tailwind CSS. The integration with MongoDB allowed us to store concert data, and NextAuth.js provided secure authentication.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<h2>Learnings 🧠</h2>
+From Tnr-Band, I gained insights into the following areas:
+<ul>
+<li>Full-Stack Development: Integrating frontend and backend components.</li>
+<li>Database Management: Storing and retrieving concert data.</li>
+<li>Authentication Strategies: Implementing secure authentication using JWT.</li>
+</ul>
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h2>Project Visuals 📸</h2>
+<img width="1439" alt="Snímek obrazovky 2024-04-10 v 12 12 18" src="https://github.com/Nixk25/Eda/assets/116200689/4ae67053-de73-43e6-b7c5-300ab7a1449a">

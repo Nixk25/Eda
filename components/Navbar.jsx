@@ -25,7 +25,7 @@ const Navbar = () => {
                 src={logo}
                 width={150}
                 height={150}
-                alt="logo skupiny Taková normální rodinka band"
+                alt="Taková normální rodinka band"
                 className="md:w-[150px] md:h-[150px] h-[100px] w-[100px]"
               />
             </Link>

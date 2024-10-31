@@ -1,7 +1,7 @@
 import logos from "@/data/logos";
 import Image from "next/image";
 import images from "@/data/images";
-import stage from "../../../public/stage-plan.jpeg";
+import stage from "../../../public/stagePlan.webp";
 import inputList from "../../../public/inputList.jpg";
 const Promo = () => {
   return (

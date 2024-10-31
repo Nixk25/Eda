@@ -60,6 +60,7 @@ export default function ContactForm() {
         status: "success",
         duration: 5000,
       });
+      form.reset();
       setLoading("Odeslat");
     }, 2000);
   }
@@ -107,7 +108,11 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Textarea placeholder="Zpráva" {...field} />
+                <Textarea
+                  className="text-black"
+                  placeholder="Zpráva"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>

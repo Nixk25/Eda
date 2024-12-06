@@ -118,6 +118,9 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
+        <a href="/privacy" target="_blank" className="flex w-full ">
+          Odesláním souhlasíte se zpracováním údajů.
+        </a>
         <div className="flex items-center justify-center w-full">
           <Button className="w-full lg:w-max " type="submit">
             {loading}

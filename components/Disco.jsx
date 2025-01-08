@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import music1 from "../public/nejdetovejs.png";
-import music2 from "../public/spagata.png";
 
 const Disco = () => {
   return (

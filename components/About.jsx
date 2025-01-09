@@ -13,6 +13,7 @@ import photo3 from "../public/photo3.webp";
 import photo4 from "../public/photo4.jpg";
 import photo5 from "../public/photo5.jpg";
 import photo6 from "../public/photo6.jpg";
+import images from "@/data/images";
 
 const About = () => {
   return (
@@ -42,108 +43,18 @@ const About = () => {
           opts={{ align: "start" }}
         >
           <CarouselContent className="-mt-1 h-[370px]">
-            <CarouselItem className="p-1">
-              <Image
-                src={photo1}
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  maxHeight: "400px",
-                  maxWidth: "600px",
-                }}
-                placeholder="blur"
-                className="rounded-md"
-                alt="fotka skupiny Taková normální rodinka band"
-              />
-            </CarouselItem>
-            <CarouselItem className="p-1">
-              <Image
-                src={photo2}
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  maxHeight: "400px",
-                  maxWidth: "600px",
-                }}
-                className="rounded-md"
-                placeholder="blur"
-                alt="fotka skupiny Taková normální rodinka band"
-              />
-            </CarouselItem>
-            <CarouselItem className="p-1">
-              <Image
-                src={photo3}
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  maxHeight: "400px",
-                  maxWidth: "600px",
-                }}
-                className="rounded-md"
-                placeholder="blur"
-                alt="fotka skupiny Taková normální rodinka band"
-              />
-            </CarouselItem>
-            <CarouselItem className="p-1">
-              <Image
-                src={photo4}
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  maxHeight: "400px",
-                  maxWidth: "600px",
-                }}
-                className="rounded-md"
-                placeholder="blur"
-                alt="fotka skupiny Taková normální rodinka band"
-              />
-            </CarouselItem>
-            <CarouselItem className="p-1">
-              <Image
-                src={photo5}
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  maxHeight: "400px",
-                  maxWidth: "600px",
-                }}
-                className="rounded-md"
-                placeholder="blur"
-                alt="fotka skupiny Taková normální rodinka band"
-              />
-            </CarouselItem>
-            <CarouselItem className="p-1">
-              <Image
-                src={photo6}
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  maxHeight: "400px",
-                  maxWidth: "600px",
-                }}
-                className="rounded-md"
-                placeholder="blur"
-                alt="fotka skupiny Taková normální rodinka band"
-              />
-            </CarouselItem>
+            {images.map(({ src, alt }, i) => (
+              <CarouselItem key={i} className="p-1">
+                <Image
+                  src={src}
+                  width={0}
+                  height={0}
+                  placeholder="blur"
+                  className="rounded-md w-full  max-w-[600px]"
+                  alt={alt}
+                />
+              </CarouselItem>
+            ))}
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />

@@ -7,17 +7,17 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import photo1 from "../public/photo1.jpg";
-import photo2 from "../public/photo2.jpg";
-import photo3 from "../public/photo3.jpg";
+import photo1 from "../public/photo1.webp";
+import photo2 from "../public/photo2.webp";
+import photo3 from "../public/photo3.webp";
 import photo4 from "../public/photo4.jpg";
 import photo5 from "../public/photo5.jpg";
 import photo6 from "../public/photo6.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="bg-primary py-10 text-black">
-      <div className="container flex justify-center items-center flex-col ">
+    <section id="about" className="py-10 text-black bg-primary">
+      <div className="container flex flex-col items-center justify-center ">
         <h2 className="font-bold title">Kdo jsme?</h2>
         <p className="text-center ">
           Taková normální rodinka band, je veselá a hravá. Kapela vznikla 13. 8.

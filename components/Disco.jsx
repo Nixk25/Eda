@@ -9,23 +9,23 @@ const Disco = () => {
         <h2 className="text-center title">Nejnovější Diskografie</h2>
         <div className="flex flex-col w-full gap-5 sm:flex-row">
           <Link
-            href="https://youtu.be/cZZTGzLRRnw?si=Age9CzqE1V9ID6op"
+            href="https://youtu.be/GMt9R2ce1yU?si=W2Q5UHz0Jxe11gmk"
             target="_blank"
             className="w-full "
           >
             <div className="w-full h-full ">
               <div className="relative w-full h-full">
                 <Image
-                  src="https://img.youtube.com/vi/cZZTGzLRRnw/maxresdefault.jpg"
+                  src="https://img.youtube.com/vi/GMt9R2ce1yU/maxresdefault.jpg"
                   width={400}
                   height={400}
                   alt="youtube video Tatova holka from music group Taková normální rodinka"
                   className="w-full h-full my-5 rounded-md"
                   placeholder="blur"
-                  blurDataURL="https://img.youtube.com/vi/cZZTGzLRRnw/maxresdefault.jpg"
+                  blurDataURL="https://img.youtube.com/vi/GMt9R2ce1yU/maxresdefault.jpg"
                 />
               </div>
-              <h3 className="my-5 text-xl font-semibold ">Tátova holka</h3>
+              <h3 className="my-5 text-xl font-semibold ">Víťa</h3>
             </div>
           </Link>
           <Link

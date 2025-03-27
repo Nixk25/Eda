@@ -1,16 +1,17 @@
-import { Phone } from "lucide-react";
-import Form from "./ContactForm";
-
 const Contact = () => {
   return (
     <section id="contact" className=" scroll-pt-[200px]">
       <div className="container">
-        <h2 className="title text-center">Kontaktujte nás</h2>
         <div>
-          <Form />
-          <div className="flex justify-center items-center flex-col mt-10 bg-black shadow-2xl text-white p-10 rounded-md">
+          <div className="flex flex-col items-center justify-center p-10 mt-10 text-white bg-black rounded-md shadow-2xl">
             <h3 className="title">Kontakty</h3>
-            <div className="flex gap-10 sm:flex-row flex-col text-center">
+            <div className="flex flex-col gap-10 text-center sm:flex-row">
+              <a
+                href="mailto:info@tnr-band.cz"
+                className="text-xl cursor-pointer"
+              >
+                info@tnr-band.cz
+              </a>
               <div className="flex flex-col">
                 <span>Umělecká vedoucí</span>
                 <span>Jana Vannay</span>

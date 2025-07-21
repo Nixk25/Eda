@@ -13,17 +13,9 @@ const Contact = () => {
                 info@tnr-band.cz
               </a>
               <div className="flex flex-col">
-                <span>Umělecká vedoucí</span>
-                <span>Jana Vannay</span>
+                <span>Jaromír Štolba</span>
                 <div className="flex gap-3">
-                  <a href="tel:+420 732 513 490">tel: +420 731 180 609</a>
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span>Umělecká vedoucí</span>
-                <span>Lucie Baierová</span>
-                <div className="flex gap-3">
-                  <a href="tel:+420 732 513 490">tel: +420 732 513 490</a>
+                  <a href="tel:+420 732 704 937">tel: +420 732 704 937</a>
                 </div>
               </div>
             </div>

@@ -6,12 +6,13 @@ import PrevConc from "@/components/PrevConc";
 import { useSession } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { getConcertDateTime, isPastConcert } from "@/lib/concertTime";
 
 const Concerts = () => {
   const { status } = useSession();
 
-  const [concerts, setConcerts] = useState([]);
-  const [prevConcerts, setPrevConcerts] = useState([]);
+  const [upcoming, setUpcoming] = useState([]);
+  const [past, setPast] = useState([]);
 
   useEffect(() => {
     const getConcerts = async () => {
@@ -24,41 +25,25 @@ const Concerts = () => {
           throw new Error("failed to fetch");
         }
 
-        let data = await res.json();
+        const data = await res.json();
+        const all = data.concerts || [];
 
-        data.concerts.sort((a, b) => new Date(a.date) - new Date(b.date));
+        const upcomingList = all
+          .filter((c) => !isPastConcert(c))
+          .sort((a, b) => getConcertDateTime(a) - getConcertDateTime(b));
 
-        setConcerts(data.concerts);
+        const pastList = all
+          .filter(isPastConcert)
+          .sort((a, b) => getConcertDateTime(b) - getConcertDateTime(a));
+
+        setUpcoming(upcomingList);
+        setPast(pastList);
       } catch (err) {
         console.log("Error loading concerts", err);
       }
     };
 
     getConcerts();
-
-    const getPrevConcerts = async () => {
-      try {
-        const res = await fetch(`/api/prevConcerts`, {
-          cache: "no-store",
-        });
-
-        if (!res.ok) {
-          throw new Error("failed to fetch");
-        }
-
-        let data = await res.json();
-
-        await data.prevConcerts.sort(
-          (a, b) => new Date(b.date) - new Date(a.date)
-        );
-
-        setPrevConcerts(data.prevConcerts);
-      } catch (err) {
-        console.log("Error loading concerts", err);
-      }
-    };
-
-    getPrevConcerts();
   }, []);
 
   return (
@@ -73,10 +58,10 @@ const Concerts = () => {
           )}
         </div>
         <div className="flex flex-col gap-10 sm:gap-5 ">
-          {concerts.map((concert, i) => {
+          {upcoming.map((concert) => {
             return (
               <Concert
-                key={i}
+                key={concert._id}
                 id={concert._id}
                 name={concert.name}
                 date={concert.date}
@@ -88,8 +73,14 @@ const Concerts = () => {
         <h2 className="mt-10 pageText">Proběhlé</h2>
 
         <div className="flex flex-col gap-10 sm:gap-5">
-          {prevConcerts.map((concert, i) => {
-            return <PrevConc key={i} name={concert.name} date={concert.date} />;
+          {past.map((concert) => {
+            return (
+              <PrevConc
+                key={concert._id}
+                name={concert.name}
+                date={concert.date}
+              />
+            );
           })}
         </div>
       </div>

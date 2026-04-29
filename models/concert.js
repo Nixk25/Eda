@@ -17,6 +17,8 @@ const concertSchema = new Schema(
   { timestamps: true }
 );
 
+concertSchema.index({ name: 1, date: 1 }, { unique: true });
+
 const Concert = models.Concert || mongoose.model("Concert", concertSchema);
 
 export default Concert;
